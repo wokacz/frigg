@@ -4,6 +4,5 @@ export abstract class Model<Type> {
   public abstract updatedAt?: Date
   public abstract deletedAt?: Date
 
-  public abstract fromJSON(json: any): Type
+  public abstract fromJSON: (json: any) => Type
 }
-

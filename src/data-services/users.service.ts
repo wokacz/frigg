@@ -20,7 +20,7 @@ export class UsersService implements DataService<User> {
   }
 
   getOne(id: number | string): Observable<User> {
-    return this.httpService.get<any>(`${this.url}/${ id }`).pipe(map(new User().fromJSON))
+    return this.httpService.get<any>(`${ this.url }/${ id }`).pipe(map(new User().fromJSON))
   }
 
   create(model: User): Observable<User> {
@@ -28,11 +28,11 @@ export class UsersService implements DataService<User> {
   }
 
   update(model: User): Observable<User> {
-    return this.httpService.put<any>(`${this.url}/${ model.ID }`, model.value).pipe(map(new User().fromJSON))
+    return this.httpService.put<any>(`${ this.url }/${ model.ID }`, model.value).pipe(map(new User().fromJSON))
   }
 
   delete(id: number | string): Observable<any> {
-    return this.httpService.delete(`${this.url}/${ id }`)
+    return this.httpService.delete(`${ this.url }/${ id }`)
   }
 }
 
