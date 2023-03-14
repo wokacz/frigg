@@ -1,0 +1,9 @@
+<div class="form-element" [class.form-invalid]="invalid">
+  <div class="label-container">
+    <label>{{ label }}</label>
+  </div>
+  <input [formControl]="formControl" [placeholder]="placeholder" [type]="type" name="name" autocomplete="off" />
+  <div class="error-message" *ngIf="invalid">
+    This is error
+  </div>
+</div>

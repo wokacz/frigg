@@ -1,0 +1,10 @@
+<app-layout>
+  <form #form="ngForm" [formGroup]="user" (ngSubmit)="submit()">
+    <app-input [control]="user.get('firstName')" label="First name" placeholder="Enter first name"></app-input>
+    <app-input [control]="user.get('lastName')" label="Last name" placeholder="Enter last name"></app-input>
+    <app-input [control]="user.get('email')" label="email" placeholder="Enter last name"></app-input>
+    <app-input [control]="user.get('userName')" label="User name" placeholder="Enter user name"></app-input>
+    <app-input [control]="user.get('password')" label="Password" placeholder="Enter password" type="password"></app-input>
+    <button type="submit">Submit</button>
+  </form>
+</app-layout>

@@ -30,7 +30,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/modules/common/styles.scss"
             ],
             "scripts": []
           },
@@ -48,7 +49,9 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "fileReplacements": [
+              ]
             },
             "development": {
               "buildOptimizer": false,
@@ -93,7 +96,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/common/styles.scss"
             ],
             "scripts": []
           }
